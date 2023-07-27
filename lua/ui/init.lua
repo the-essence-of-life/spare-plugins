@@ -5,7 +5,7 @@ return {
     priority = 1000,
     name = "catppuccin",
     config = function()
-      require("spare.plugins.ui.catppuccin")
+      require("ui.catppuccin")
       local color = color or "catppuccin"
       vim.cmd.color(color)
     end,
@@ -29,21 +29,21 @@ return {
   --   dependencies = { "nvim-tree/nvim-web-devicons" },
   --   config = function()
   --     vim.opt.laststatus = 2
-  --     require("spare.plugins.ui.lualine")
+  --     require("ui.lualine")
   --   end,
   -- },
   {
     "lukas-reineke/indent-blankline.nvim",
     event = "UIEnter",
     config = function()
-      require("spare.plugins.ui.indent-blankline")
+      require("ui.indent-blankline")
     end,
   },
   {
     "goolord/alpha-nvim",
     event = "VimEnter",
     config = function()
-      require("spare.plugins.ui.alpha")
+      require("ui.alpha")
     end,
   },
   {
@@ -52,7 +52,7 @@ return {
     -- to make sure all required plugins and colorschemes are loaded before setup
     -- event = "UiEnter",
     config = function()
-      require("spare.plugins.ui.heirline")
+      require("ui.heirline")
     end
   },
 }
