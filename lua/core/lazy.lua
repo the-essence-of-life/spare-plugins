@@ -17,11 +17,36 @@ require('lazy').setup({
       'the-essence-of-life/spare',
       branch = "2.0",
       import = 'spare.plugins',
-      opts = {}
+      opts = require("core.config")
     },
     { import = "plugins" }
   },
   defaults = {
     lazy = true
-  }
+  },
+  ui = {
+    border = "rounded",
+    backdrop = 100,
+  },
+  checker = {
+    enabled = false,
+    concurrency = 1,
+    notify = false,
+    frequency = 3600,
+  },
+  profiling = {
+    loader = true,
+    require = false,
+  },
+  change_detection = {
+    enabled = true,
+    notify = false,
+  },
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "netrwPlugin"
+      }
+    }
+  },
 })
