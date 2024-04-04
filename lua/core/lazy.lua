@@ -15,9 +15,11 @@ require('lazy').setup({
   spec = {
     {
       'the-essence-of-life/spare',
+      branch = "2.0",
       import = 'spare.plugins',
       opts = {}
-    }
+    },
+    { import = "plugins" }
   },
   defaults = {
     lazy = true
