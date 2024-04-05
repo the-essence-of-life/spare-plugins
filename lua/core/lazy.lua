@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   spec = {
     {
-      'the-essence-of-life/spare',
+      'the-essence-of-life/sparenvim',
       branch = "2.0",
       import = 'spare.plugins',
       opts = require("core.config")

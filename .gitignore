@@ -1,0 +1,3 @@
+lua/config/
+lua/core/config.lua
+lua/plugins/*
